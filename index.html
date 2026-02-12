@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+              // Q 1
+        let a = ["Pakistan", "china", "Bangladesh", "Australia", "Iran"];
+                  document.write(a + "<br>");
+
+document.write("<br>");
+
+                //   Q2
+                   let n = [10, 20, 30, 40];
+                        document.write(n[0]);
+                        document.write(n[3]);
+
+                        
+document.write("<br>" + "<br>");  
+                        
+        // Q 3
+               let b = ["Apple", "Banana", "Mango"];
+                    b.push("Orange");
+                    document.write(b);
+
+document.write("<br>" + "<br>");  
+
+        // Q 4
+               let p = ["Yaseen", "Talha", "Mudasir", "Salam"];
+                p.pop()
+                  document.write(p);
+
+document.write("<br>" + "<br>")
+
+        // Q 5
+                let y = ["Sukkur", "Karachi", "Islamabad"];
+                 y.unshift("Khairpur")
+                  document.write(y);
+
+document.write("<br>" + "<br>")
+
+        // Q 6
+                 let g = [10, 30, 50, 70, 65];
+                   let ab = g.filter(g => g > 50);
+                    document.write(ab);
+
+document.write("<br>" + "<br>")
+               
+            //    Q 7
+               let abc = [10, 15, 30];
+              let u = abc.map(num => num + 10);
+             document.write(u);
+
+document.write("<br>" + "<br>");
+
+                // Q 8
+                let j = ["Muhammad", "Yaseen"];
+                 let jj = ["Pirzada", "Yaseen"];
+                  let com = j.concat(jj);
+                   document.write(com);
+
+document.write("<br>" + "<br>");
+
+                // Q 9
+                  let i = ["Laptop", "Mobile", "Tablet", "Mouse", "Keyboard"];
+let ii = i.includes("Mobile");
+document.write(ii);
+
+            document.write("<br>" + "<br>");
+
+            //    Q 10
+               let va = [100, 200, 300];
+                   let [first, second] = va;
+                     document.write(first);
+                   document.write(second);
+
+document.write("<br>" + "<br>");  
+
+// Q 11 & 12
+let student = {
+  name: "Yaseen",
+  age: 18,
+  course: "Web & App development"
+}; 
+document.write("Name: ", student.name + "<br> ", "Age: ", student.age );
+
+
+document.write("<br>" + "<br>"); 
+
+
+// Q 13
+        let students = {
+         title: "English",
+          author: "The Wise Man",
+          price: 1000
+            };
+           students.price = 1150;
+             document.write(JSON.stringify(students));
+
+
+document.write("<br>" + "<br>");
+
+// Q 14
+             let em = {
+  name: "Yaseen",
+  age: 18,
+  salary: "150k"
+};
+em.department = "IT";
+document.write(JSON.stringify(em));
+
+
+document.write("<br>" + "<br>");
+
+
+// Q 15
+           let pr = {
+          name: "Yaseen",
+           age: 18,
+          city: "Sukkur"
+          };
+
+           delete pr.city;
+        document.write(JSON.stringify(pr));
+
+ 
+document.write("<br>" + "<br>")
+
+
+// Q 16
+let car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2022
+};
+
+document.write(car.brand + "<br>");
+document.write(car.model + "<br>");
+document.write(car.year + "<br>");
+
+
+document.write("<br>" + "<br>");
+
+
+// Q 17
+let name = {
+  "full name": "Muhammad Yaseen",
+  age: 21
+};
+document.write(name["full name"]);
+
+
+document.write("<br>" + "<br>");
+
+
+
+// Q 18
+let st = [
+  {name: "Yaseen", age: 18},
+  {name: "Yaseen pirzada", age: 20}
+];
+document.write(JSON.stringify(st[0].name));
+document.write(JSON.stringify(st[1].age));  
+
+
+document.write("<br>" + "<br>");
+
+
+
+
+
+// Q 19
+let std = [
+  {name: "Yaseen", age: 18},
+  {name: "Yaseen Pirzada", age: 20}
+];
+
+std.push({name: "Muhammad yaseen", age: 22});
+document.write(JSON.stringify(std));
+
+
+document.write("<br>" + "<br>");
+
+
+
+
+
+
+//  Q 20
+let s = [
+  {name: "Muhammad Yaseen", age: 20},
+  {name: "yaseen Pirzada", age: 22},
+  {name: "Muhammad Yaseen Pirzada", age: 23}
+];
+
+for (let i = 0; i < students.length; i++) {
+  console.log("Name:", students[i].name);
+  console.log("Age:", students[i].age);
+}
+      </script>
+</body>
+</html>
